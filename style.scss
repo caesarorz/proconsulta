@@ -1,0 +1,544 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "abstracts/_variables.scss";
+@import "abstracts/_mixins.scss";
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    .support-company-area .support-wrapper .left-content {
+        width: 40%;
+        //padding-left: 366px;
+    }
+
+
+    .support-company-area .support-wrapper .right-content {
+        width: 60%;
+        position: relative;
+
+    }
+    .pt-10 {
+        padding-top: 10px;
+    }
+
+    .fix {
+        overflow: hidden;
+    }
+
+    .support-company-area .support-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .box-29291 {
+        color: $white;
+        position: relative;
+        z-index: 2;
+        margin-right: -60px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 4rem;
+    }
+    .h-100 {
+        height: 100%!important;
+    }
+    .bg-purple {
+        background-color: $purple800;
+    }
+    .heading-form{
+        @include font($font-family-montse, 34px, 700);
+    }
+
+    input[type=text]{
+        background-color: $purple700;
+        border: none;
+        border-radius: 0;
+        resize: none;
+        outline: none;
+        color: $white;
+        padding: 22px 16px;
+    }
+    input[type=number]{
+        background-color: $purple700;
+        border: none;
+        border-radius: 0;
+        resize: none;
+        outline: none;
+        color: $white;
+        padding: 22px 16px;
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        @include font($font-family-roboto, 18px, 400);
+        color: $white $i;
+      }
+
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $white;
+      }
+
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $white;
+      }
+
+    .submit{
+        background-color: $orange700;
+        color: $white;
+        border: none;
+        border-radius: 0;
+        resize: none;
+        outline: none;
+    }
+
+
+    .multipleitems-margin-vertical > *{
+        margin: 8px 0 8px 0;
+    }
+
+    // Navbar start
+    .nav-link{
+        @include font($font-family-roboto, 16px, 500);
+        color: black;
+        margin: 0 17px 0 17px;
+    }
+    .initSession{
+        @include font($font-family-roboto, 16px, 500);
+        background-color: $orange700;
+        color: $white;
+    }
+    // Navbar end
+    // Main titles start
+    .mainTitle{
+        @include font($font-family-montse, 52px, 700);
+        span{
+            color: $orange700;
+        }
+    }
+
+    .mainTitle2{
+        @include font($font-family-montse, 40px, 700);
+    }
+
+
+
+    // Main titles end
+
+    .qsText{
+        @include font($font-family-roboto, 18px, 400);
+        color: $grey400;
+    }
+
+    .line {
+        width: 73px;
+        height: 2px;
+        background: $orange700;
+        margin-bottom: 4px;
+        margin-left: 4px;
+        display: inline-block;
+    }
+
+    small {
+        color: $orange700;
+        @include font($font-family-roboto, 16px, 500);
+    }
+
+    .container {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .quienes-somos-text {
+        padding-right: 39%;
+    }
+    .quienes-somos .card-quienes-somos {
+        width: 20rem;
+        border: none;
+        height: 10%;
+    }
+    .quienes-somos-p {
+        @include font($font-family-roboto, 20px, 700);
+        margin-top: 10px;
+    }
+    .card-quienes-somos:hover {
+        background-color: #262626;
+    }
+
+    // --> Algunos de nuestros clientes Start borde
+    .nuestros-clientes-border1 {
+        border-top: 1px solid #DBDBDB;
+    }
+    .nuestros-clientes-border1-margin{
+        margin-top: 5%;
+    }
+    .nuestros-clientes-border2-margin{
+        margin-bottom: 5%;
+    }
+    .nuestros-clientes-border2 {
+        border-bottom: 1px solid #DBDBDB;
+    }
+
+
+    // --> nuestros servicios
+    .nuestros-servicios {
+        background: #F3F3F3;
+    }
+    // menu Nuestros Servicios
+    .nuestros-servicios-lista li {
+        @include font($font-family-roboto, 20px, 500);
+        list-style-type: none; /* Remove bullets */
+        padding-top: 8%;
+        padding-left: 5%;
+        width: 293px;
+        height: 72px;
+        color: black;
+    }
+    .nuestros-servicios-text {
+        @include font($font-family-roboto, 18px, 400);
+        list-style-type: none;
+        color: black;
+        // padding: 10px;
+        margin-bottom: 0%;
+        margin-left: 20%;
+    }
+    .li-active {
+        background-color: $orange700;
+        color: $white;
+    }
+    .li-inactive {
+        color: black;
+    }
+    .scroll {
+        float: left;
+        height: 200px;
+        width: 4px;
+        background-color: #DFDFDF;
+        // border: 1px solid gray;
+    }
+    .scroll-pintar {
+        height: 40px;
+        background-color: $orange700;
+        width: 4px;
+    }
+    .proyectos {
+        padding-left: 10%;
+    }
+    .proyectos-carousel { // proyectos section
+        overflow-x: hidden;
+    }
+    .carousel {
+        width: 1033px;
+    }
+    .card {
+        width: 414px;
+        height: 393px;
+    }
+    .card-body-proyectos {
+        background-color: $purple700;
+        color: white;
+    }
+    .wrapper-scroll {
+        // margin-top: 2%;
+        padding: 2% 0 2% 0;
+
+    }
+    .scroll-carousel {
+        width: 160px;
+        height: 4px;
+        background-color: #DFDFDF;
+        float: left;
+        margin-top: 1.2%;
+    }
+    .scroll-line {
+        width: 40px;
+        height: 4px;
+        background-color: $orange700;
+    }
+    .control-carousel {
+        float: left;
+        margin-left: 23%;
+    }
+    .control-carousel-right {
+        display: inline;
+    }
+    .control-carousel-left {
+        display: inline;
+        margin-left: 20px;
+    }
+    .control-carousel-click {
+        filter: invert(52%) sepia(17%) saturate(7408%) hue-rotate(349deg) brightness(99%) contrast(96%);
+    }
+    .control-carousel-click-reverse {
+        filter: invert(36%) sepia(0%) saturate(569%) hue-rotate(136deg) brightness(101%) contrast(92%);
+    }
+
+    .contactenos {
+        background-image: url(../img/Group27.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: $purple800;
+        color: $white;
+    }
+    .contactenos-wrapper {
+        padding: 10% 5% 10% 20%;
+    }
+    .contactenos-line {
+        background-color: $white;
+    }
+    .contactenos-wrapper > .mainTitle2, .btn-contactenos, .contactenos-small {
+        margin: 8px 0 8px 0;
+        color: $white;
+    }
+    .btn-contactenos {
+        background-color: $orange700;
+        color: white;
+        width: 255px;
+        border-radius: 0%;
+    }
+    .btn-contactenos:hover {
+        background-color: #cd5b1a;
+    }
+
+    .footer {
+        background-color: #262626;
+    }
+    .footer-wrapper-right {
+        padding: 10% 5% 10% 20%;
+        color: white;
+    }
+    .footer-wrapper-left {
+        padding: 10% 5% 10% 5%;
+        color: white;
+    }
+    .footer-socialmedia {
+        margin-top: 48%;
+    }
+    .footer-socialmedia > * {
+        margin-right: 30px;
+    }
+
+    .footer-wrapper-left p {
+        @include font($font-family-roboto, 16px, 400);
+    }
+    #footer-contactenos {
+        @include font($font-family-roboto, 20px, 500);
+        color: gray;
+    }
+}
+
+@include media-breakpoint-only(xs) {
+    body {
+        .pt-5 {
+            padding-top: 0rem !important;
+        }
+        .py-5 {
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+        }
+        .container, .container-fluid {
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+        .mainTitle {
+            font-size: 30px;
+            width: 60%
+        }
+        .h-100 {
+            height: 60% !important;
+        }
+        .box-29291 {
+            margin-right: -68px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            padding: 1rem;
+        }
+        .mainTitle2, .heading-form {
+            font-size: 25px;
+            width: 100%;
+            padding: 0% 2% 0% 2%;
+        }
+        .right-img img {
+            width: 305%;
+        }
+        .qsText {
+            padding: 0% 2% 0% 2%;
+            font-size: 16px;
+        }
+        .quienes-somos .card-quienes-somos {
+            width: auto;
+            // border: none;
+            // height: 10%;
+        }
+        .quienes-somos-p {
+            margin-top: 0px;
+        }
+
+        input[type=text] {
+            padding: 5px 3px;
+        }
+        input[type=number] {
+            padding: 5px 3px;
+        }
+
+        #recipeCarousel {
+            width: 100%;
+        }
+        .card-body {
+            padding: 0%;
+        }
+        .nuestros-servicios-menu {
+            height: 320px;
+        }
+        .nuestros-servicios-lista li {
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            list-style-type: none;
+            padding: 2% 0% 2% 2%;
+            width: 80%;
+            height: 100%;
+            color: black;
+        }
+        .nuestros-servicios-text {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 0%;
+            margin-left: 0%;
+        }
+        .ftco-animate {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 7%;
+        }
+        .proyectos {
+            padding: 0%;
+        }
+        .scroll-carousel {
+            margin: 1% 21% 0px 2%;
+        }
+        .scroll-line {
+            margin: 0% 21% 0px 120px;
+        }
+        #control-carousel-left{
+            width: 30px;
+        }
+        #control-carousel-right{
+            width: 45px;
+        }
+        .control-carousel {
+            float: left;
+            // margin-left: %;
+            // margin-top: 3px;
+            margin: 1% 21% 0px 21%;
+        }
+        .contactenos-wrapper {
+            padding: 0;
+        }
+        .contactenos-wrapper > * {
+            margin: 10% 0% 10% 0%;
+        }
+        .btn-contactenos{
+            width: 60%;
+            margin-left: 5px;
+        }
+
+
+        .footer-wrapper-right {
+            padding: 5% 5% 5% 2%;
+            color: white;
+        }
+        .footer-socialmedia {
+            margin-top: 8%;
+        }
+        .footer-socialmedia > * {
+            margin-right: 5px;
+        }
+
+        .footer-wrapper-left p {
+            @include font($font-family-roboto, 14px, 300);
+        }
+        #footer-contactenos {
+            @include font($font-family-roboto, 16px, 500);
+            color: gray;
+        }
+    }
+}
+
+@include media-breakpoint-only(sm) {
+    body {
+        .mainTitle {
+            font-size: 25px;
+        }
+    }
+}
+
+@include media-breakpoint-only(md) {
+
+}
+
+@include media-breakpoint-only(lg) {
+
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 1800px){
+    .support-company-area .support-wrapper .left-content {
+        padding-left: 200px;
+        width: 49%;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px){
+    .support-company-area .support-wrapper .left-content {
+        width: 49%;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px){
+    .support-company-area .support-wrapper .right-content {
+        width: 49%;
+    }
+}
+
+
+
+
+//  -->  Carousel
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+  }
+
+  .carousel-inner .carousel-item.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    display: flex;
+  }
+
+  /* medium and up screens */
+  @media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(25%);
+    }
+
+    .carousel-inner .carousel-item-start.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-25%);
+    }
+  }
+
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+  transform: translateX(0);
+  }
